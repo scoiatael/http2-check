@@ -11,8 +11,6 @@ import (
 
 func main() {
 	client := http.Client{
-		// InsecureTLSDial is temporary and will likely be
-		// replaced by a different API later.
 		Transport: &http2.Transport{},
 	}
 
